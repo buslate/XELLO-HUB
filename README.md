@@ -29,6 +29,8 @@ Tab1:AddToggle('MyToggle', {
     Default = false, -- Default value (true / false)
     Tooltip = 'Farm', -- Information shown when you hover over the toggle
     Callback = function(A)
+for i=1,2 do
+print("รอบที่ "..i)
 _G.FastAttack = A
 _G.FastAttackType = "Fast"
 
@@ -140,6 +142,7 @@ coroutine.wrap(function()
          end
      end
 end)()
+end
 _G.args = A
 _G.args = {
     [1] = "Buso"
@@ -320,7 +323,7 @@ game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer(unpack(args))
 end)
 
 spawn(function()
-    while task.wait(.5) do
+    while task.wait(.0) do
         pcall(function()
             if _G.Auto_Farm then
             checklevel()
