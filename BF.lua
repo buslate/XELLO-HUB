@@ -3,18 +3,14 @@ local placeId = game.PlaceId
 if placeId == 2753915549 or placeId == 4442272183 or placeId == 7449423635 then
     BloxFruit = true
 end
-task.spawn(function()
-     while task.wait() do
-     end
-end)
 local placeId = game.PlaceId
-if placeId == 2753915549 then
-	OldWorld = true
-elseif placeId == 4442272183 then
-	TwoWorld = true
-elseif placeId == 7449423635 then
-	ThreeWorld = true
-end
+	if placeId == 2753915549 then
+		OldWorld = true
+	elseif placeId == 4442272183 then
+		NewWorld = true
+	elseif placeId == 7449423635 then
+		ThreeWorld = true
+	end
 local Fluent = loadstring(game:HttpGet("https://github.com/dawid-scripts/Fluent/releases/latest/download/main.lua"))()
 local SaveManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/dawid-scripts/Fluent/master/Addons/SaveManager.lua"))()
 local InterfaceManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/dawid-scripts/Fluent/master/Addons/InterfaceManager.lua"))()
